@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pointer{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-100%);
+    z-index: 999;
+    width: 5px;
+    height: 130px;
+    background-color: black;
+}
+
+.pointer-left{
+    width: 5px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: -8px;
+}
+
+.pointer-right{
+    width: 5px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.btn-area{
+    position: absolute;
+    margin-bottom: 400px;
+}
+
+.btn-area button{
+    width: 65px;
+    height: 32px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#start{
+    margin-right: 15px;
+    background-color: #5FCE72;
+    color: white;
+}
+
+#end{
+    background-color: #E63F45;
+    color: white;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(
+            #EA436E 0deg 45deg,
+            #FBF86B 45deg 90deg,
+            #65DC79 90deg 135deg,
+            #4497F6 135deg 180deg,
+            #ED7547 180deg 225deg,
+            #924092 225deg 270deg,
+            #ffcdd5 270deg 315deg,
+            #9d4646 315deg 360deg
+    );
+    border-radius: 50%;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 400px;
+    width: 60%;
+}
+
+.list1{
+    background-color: #EA436E;
+}
+.list2{
+    background-color: #FBF86B;
+}
+.list3{
+    background-color: #65DC79;
+}
+.list4{
+    background-color: #4497F6;
+}
+.list5{
+    background-color: #ED7547;
+}
+.list6{
+    background-color: #924092;
+}
+.list7{
+    background-color: #ffcdd5;
+}
+.list8{
+    background-color: #9d4646;
+}
+
+
+
+.list-item{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    /*background-color: #FBF86B;*/
+    /*margin: 0 20px;*/
+}
+
+.list span{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.list-txt{
+    /*font-size: 20px;*/
+
+}
+
